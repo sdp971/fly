@@ -1,0 +1,29 @@
+.Quizz{
+  background-color: blueviolet;
+ height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+
+}
+.answer-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+ 
+}
+
+.answer-container > button{
+ padding: 16px;
+ height: fit-content;
+}
+
+.btn-next{
+  padding-top: 32px;
+}
+
+
+

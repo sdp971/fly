@@ -1,9 +1,9 @@
 
 
-function Explication  ()  {
+function Explication  ({texte})  {
   return (
     <div>
-      Explication
+     {texte}
     </div>
   )
 }
