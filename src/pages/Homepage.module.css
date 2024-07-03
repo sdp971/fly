@@ -1,0 +1,15 @@
+.containerButton {
+    padding-top: 6rem;
+}
+
+.bouton {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    text-align: center;
+    color: var(--violet);
+    background-color: white;
+    height: 4rem;
+    width: 20rem;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid black;
+}

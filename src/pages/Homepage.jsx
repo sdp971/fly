@@ -1,11 +1,14 @@
 import Logo from '../components/Logo';
-import Question from '../components/Question';
+import styles from "./Homepage.module.css";
+
 
 function Homepage() {
   return (
     <div>
       <Logo />
-      <Question />
+      <div className={styles.containerButton}>
+        <button className={styles.bouton}>COMMENCER</button>
+      </div>
     </div>
   );
 }

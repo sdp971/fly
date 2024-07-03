@@ -4,7 +4,6 @@ import Question from "../components/Question";
 
 function Quiz() {
   return <div>
-    <Logo />
     <Question />
     <Explication/>
   </div>;
