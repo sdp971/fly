@@ -1,5 +1,12 @@
+import { useScore } from "../context/UserProvider";
+
+
 function Score() {
-  return <div>Score</div>;
+
+  const { count } = useScore();
+
+
+  return <div>Score: {count} </div>;
 }
 
 export default Score;
