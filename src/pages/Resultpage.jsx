@@ -1,9 +1,9 @@
 import Score from '../components/Score';
 
-function Resultpage() {
+function Resultpage({count}) {
   return (
     <div>
-      <Score />
+      <Score count={count} />
     </div>
   );
 }
