@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-
 }
-.answer-container{
+
+.question-container{
+  color: var(--violet);
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -15,18 +15,8 @@
   margin: auto;
 }
 
-.answer-container > button{
- padding: 16px;
- height: fit-content;
+.answer-button-container {
+  background-color: var(yellow);
 }
-
-
-
-.btn-next{
-  padding-top: 32px;
-  width: 50%;
-  height: fit-content;
-}
-
 
 

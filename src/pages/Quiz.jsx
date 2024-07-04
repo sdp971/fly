@@ -37,6 +37,7 @@ function Quiz() {
           questions[currentQuestion].answers[answer_id - 1].explanation.text
         }
         setShowExplanation={setShowExplanation}
+        onclick={handleNext}
       />
     );
     
@@ -64,28 +65,32 @@ function Quiz() {
     <div className='Quizz'>
       <Logo />
 
-      <div className='question-container' ref={questionContainerRef}>
-        <Question2 question={questions[currentQuestion].question} />
-
-        {questions[currentQuestion].answers.map((answer, index) => (
-          <div className='answer-container' key={index}>
-            <Button
-              onclick={() => handleClick(answer.id, answer.text)}
-              style={{
-                borderColor: selectedAnswer === answer.text ? 'green' : ' ',
-              }}
-              disabled={disabled}
-            >
-              {answer.text}
-            </Button>
-          </div>
-        ))}
-
-        {displayComponent}
-        <div className='btn-next'>
-          <Button className='nextBouton' onclick={handleNext}>SUIVANT</Button>
-        </div>
+    <div className='main-question-container'>
+      <div className='context-container' ref={questionContainerRef}>
+        <p className='text-context'>Contexte de la question</p>
       </div>
+      <div className='question-container'>
+      <Question2 question={questions[currentQuestion].question} />
+      </div>
+    </div>
+
+    <div className='main-answer-container'>
+      {questions[currentQuestion].answers.map((answer, index) => (
+      <div key={index}>
+        <Button
+          onclick={() => handleClick(answer.id, answer.text)}
+          style={{
+          borderColor: selectedAnswer === answer.text ? 'green' : ' ',
+          }}
+          disabled={disabled}
+        >
+          {answer.text}
+        </Button>
+        </div>
+          ))}
+
+          {displayComponent}
+        </div>
     </div>
   );
 }
