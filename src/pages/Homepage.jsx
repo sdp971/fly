@@ -1,7 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import FLY from './../assets/images/Logo_FLY_center.png'
 import './Homepage.css';
 
+
+
 function Homepage() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/quiz")
+    
+  }
   return (
     <div>
       <div className='logoHomepage'>
@@ -9,7 +18,7 @@ function Homepage() {
       </div>
 
       <div className='containerButton'>
-        <button className='bouton'>COMMENCER</button>
+        <button className='bouton' onClick={handleClick}>COMMENCER</button>
       </div>
     </div>
   );
