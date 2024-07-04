@@ -1,5 +1,5 @@
 import './Explication.css';
-import image from '../assets/image.png';
+// import image from '../assets/image.png';
 import { useEffect, useState } from 'react';
 
 function Explication({ texte }) {

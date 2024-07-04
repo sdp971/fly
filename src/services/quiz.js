@@ -56,7 +56,7 @@ const quiz =  {
                 text: "Au travail",
                 score: null,
                 explanation: {
-                    text: "Au travail : Bravo, tu fais partie des 67,9% de femmes en emploi contre 75,6% d’hommes travaillant. Tu travailles probablement dans un métier où la part des femmes est la plus nombreuses. Elles représentent 90% des personnels de service employés par des particuliers et 80% des métiers de la santé humaine et de l’action sociale."
+                    text: "Bravo, tu fais partie des 67,9% de femmes en emploi contre 75,6% d’hommes travaillant. Tu travailles probablement dans un métier où la part des femmes est la plus nombreuses. Elles représentent 90% des personnels de service employés par des particuliers et 80% des métiers de la santé humaine et de l’action sociale."
                 }
             },
             {
@@ -64,7 +64,7 @@ const quiz =  {
                 text: "En cours",
                 score: null,
                 explanation: {
-                    text: "En cours : Ça ne m’étonne pas. 45,6% de femmes font des études supérieures pour 39% d’hommes. Fais-tu partie des 23 % de femmes qui ont réussi à intégrer un DUT production / informatique. Évidemment, la part des étudiantes en science est la plus importante… dans les facs de médecine 65,6%. Pas étonnant lorsqu’on sait que les métiers de la santé humaine sont constitués à 80% de femmes."
+                    text: "Ça ne m’étonne pas. 45,6% de femmes font des études supérieures pour 39% d’hommes. Fais-tu partie des 23 % de femmes qui ont réussi à intégrer un DUT production / informatique. Évidemment, la part des étudiantes en science est la plus importante… dans les facs de médecine 65,6%. Pas étonnant lorsqu’on sait que les métiers de la santé humaine sont constitués à 80% de femmes."
                 }
             }
         ]
@@ -76,14 +76,14 @@ const quiz =  {
         answers: [
             {
                 id: 1,
-                text: "en bus",
+                text: "En bus",
                 score: null,
                 explanation: {
                     text: "C’est cool, tu es écolo mais tu cours le risque d’être victime d’agression sexuelles. Tu croiseras probablement un frotteur ou te prendra une main aux fesses. En 2022, le nombre de victimes. Si tu vis à Paris, ton risque est plus grand (4,2 % contre 2 % à subir une agression sexuelle, 3% à subir un exhibitionniste contre 1 %)"						}
             },
             {
                 id: 2,
-                text: "en voiture",
+                text: "En voiture",
                 score: null,
                 explanation: {
                     text: "Tu conduis mieux qu’un homme parce que tu es impliquée dans moins d’accidents mais tu as pourtant 73% de risque en plus d’être blessée qu’un homme en cas de choc frontal parce que les tests automobiles sont uniquement réalisés avec des mannequins de morphologie masculine ! Le premier mannequin fémin a été developpé en 2022"
@@ -98,7 +98,7 @@ const quiz =  {
         answers: [
             {
                 id: 1,
-                text: "oui",
+                text: "Oui",
                 score: null,
                 explanation: {
                     text: "J’espère pour toi qu’il agira sans trop d’effet secondaire. En effet, la plupart des tests cliniques sont passés sur des hommes et aboutissent à des médicaments mal calibrés pour le corps des femmes. Les femmes ne comptent que pour 11% des testeuses dans la recherche contre le Sida. Pour les vaccins elles ne sont que 38%."	
@@ -106,7 +106,7 @@ const quiz =  {
             },
             {
                 id: 2,
-                text: "non",
+                text: "Non",
                 score: null,
                 explanation: {
                     text: "Espérons que ce ne soit pas une crise cardiaque. Une femme sur 3 meurent d’un infarctus en France. 54% des décès par infarctus sont des femmes. Or le sénat notait en 2019 que “sur 300 articles recensés dans un travail de 2015, trois seulement mentionnent une analyse différenciée selon le sexe "
@@ -121,18 +121,18 @@ const quiz =  {
         answers: [
             {
                 id: 1,
-                text: "tu acceptes",
+                text: "Tu acceptes",
                 score: null,
                 explanation: {
-                    text: "Tu acceptes : Bien sûr que tu acceptes, et pourquoi pas. Après tout, comme Jean-Michel, tu as déjà eu tes enfants alors tu fais bien comme tu veux, comme Jean-Mimi. Par contre ton salaire, à cause de tes enfants, lui ne suit pas la même courbe que celui de Jean-Michel et ce jusqu’à la fin de ta carrière. La perte moyenne en salaire mensuel en France pour les mères a été évaluée à -23,5 %"	
+                    text: "Bien sûr que tu acceptes, et pourquoi pas. Après tout, comme Jean-Michel, tu as déjà eu tes enfants alors tu fais bien comme tu veux, comme Jean-Mimi. Par contre ton salaire, à cause de tes enfants, lui ne suit pas la même courbe que celui de Jean-Michel et ce jusqu’à la fin de ta carrière. La perte moyenne en salaire mensuel en France pour les mères a été évaluée à -23,5 %"	
     }
             },
             {
                 id: 2,
-                text: "tu refuses",
+                text: "Tu refuses",
                 score: null,
                 explanation: {
-                    text: "Tu refuses : Jean-Michel insiste “Non ? Ah, tu vois, tu es enceinte j’en suis sûr. Je savais que je n’aurais pas dû t’embaucher si c’est pour me claquer en congé mat pour 2 ans et puis partir à 16h tous les jours.” Il extrapole vite mais toi tu sais que tu viens de rejoindre la cohorte des 11,3 % de femmes s’estimant victimes de discrimination au travail (contre 7 % d’hommes), 30 % jugeant ces discriminations sexistes. 3,1 % des saisines auprès du Défenseur des droits sont en lien avec la grossesse. Il s’agit de la troisième cause de discrimination cité par les femmes selon une étude réalisée et citée par la sociologie Elsa Boulet devant le Sénat "
+                    text: "Jean-Michel insiste “Non ? Ah, tu vois, tu es enceinte j’en suis sûr. Je savais que je n’aurais pas dû t’embaucher si c’est pour me claquer en congé mat pour 2 ans et puis partir à 16h tous les jours.” Il extrapole vite mais toi tu sais que tu viens de rejoindre la cohorte des 11,3 % de femmes s’estimant victimes de discrimination au travail (contre 7 % d’hommes), 30 % jugeant ces discriminations sexistes. 3,1 % des saisines auprès du Défenseur des droits sont en lien avec la grossesse. Il s’agit de la troisième cause de discrimination cité par les femmes selon une étude réalisée et citée par la sociologie Elsa Boulet devant le Sénat "
                 }
             }
         ]
@@ -144,7 +144,7 @@ const quiz =  {
         answers: [
             {
                 id: 1,
-                text: "oui",
+                text: "Oui",
                 score: null,
                 explanation: {
                     text: "Pour une loi spécifique aux mères : manque de bol, la plupart des lois favorisant les avancées sociales (patricapitalisme) sont principalement dûes aux femmes. Or, début juillet 2024 ces dernières ne représentent que 37,3 % de l’Assemblée nationale, 36 % du Sénat et 20% des maires de France. Au gouvernement, la parité est respectée mais aucune femme ne détient de portefeuille d’importance. Sans la loi sur la parité de juin 2000, la place des femmes aurait évolué encore plus lentement."	
@@ -152,7 +152,7 @@ const quiz =  {
             },
             {
                 id: 2,
-                text: "non",
+                text: "Non",
                 score: null,
                 explanation: {
                     text: "Avec 37,3 % de l’Assemblée nationale, 36 % du Sénat et 20% des maires de France, une telle loi n’avait pas beaucoup de chances d’aboutir. Tu décides de te focaliser sur faire appliquer l’égalité salariale entre hommes et femmes déjà, car celle-ci n’existe toujours pas. Les Nations unies ont estimé qu’il faudrait 131 ans pour l’atteindre. Aujourd’hui les hommes gagnent toujours 24 % de plus que les femmes en moyenne. A temps de travail et poste équivalent, cette différence reste de 4 %. Sur une carrière de cadre, il a été estimé que cela constituait un iatus de 400 000 euros, soit une maison."
@@ -162,35 +162,35 @@ const quiz =  {
     },
 {
         id: 8,
-        temps: "APRES-MIDI",
-        question: " Il est 16h ; la bien-mal nommée “heures des mamans” à l’école approche. Tu pars maintenant chercher des enfants à l’école et entame ton temps partiel ou tu restes jusqu’à 18h pour aller faire la cuisine et le ménage ?",
+        temps: "APRÈS-MIDI",
+        question: "Il est 16h ; la bien-mal nommée “heures des mamans” à l’école approche. Tu pars maintenant chercher des enfants à l’école et entame ton temps partiel ou tu restes jusqu’à 18h pour aller faire la cuisine et le ménage ?",
         answers: [
             {
                 id: 1,
-                text: "à l'école",
+                text: "À l'école",
                 score: null,
                 explanation: {
-                    text: "À l’école : Tu peux partir plus tôt car comme 26,9% des femmes, tu travailles à temps partiel contre 7,7% des hommes. Ce taux moyen augmente avec le nombre d’enfant jusqu’à 33,4 % pour les mères de 3 enfants ou plus. Pour les, ce taux est stable quelque soit le nombre d’enfant ; il y a même plus d’hommes travaillant à temps partiel sans enfant (8,5 %) qu’avec enfant(s). Par ailleurs, les femmes sont le plus souvent le parent par défaut pour l’éducation nationale. Si aucune donnée n’existe sur le nombre d’appel passé aux mères plutôt qu’aux pères, on sait que les mères assistent dans 89,7% des cas aux réunions parents/profs dont seule dans 54,5 % des cas."	
+                    text: "Tu peux partir plus tôt car comme 26,9% des femmes, tu travailles à temps partiel contre 7,7% des hommes. Ce taux moyen augmente avec le nombre d’enfant jusqu’à 33,4 % pour les mères de 3 enfants ou plus. Pour les, ce taux est stable quelque soit le nombre d’enfant ; il y a même plus d’hommes travaillant à temps partiel sans enfant (8,5 %) qu’avec enfant(s). Par ailleurs, les femmes sont le plus souvent le parent par défaut pour l’éducation nationale. Si aucune donnée n’existe sur le nombre d’appel passé aux mères plutôt qu’aux pères, on sait que les mères assistent dans 89,7% des cas aux réunions parents/profs dont seule dans 54,5 % des cas."	
     }
             },
             {
                 id: 2,
-                text: "à la maison",
+                text: "À la maison",
                 score: null,
                 explanation: {
-                    text: "A la maison : en arrivant à la maison, ton conjoint t’appelle pour te dire qu’il part à un afterwork pour discuter avec Jean-Claude et ne pas rater la prochaine promotion. Toi aussi tu aurais bien aimé pouvoir avancer tes dossiers pour obtenir une promotion et changer de service afin de devenir manager et ne plus avoir à subir Jean-Michel. Mais bon, la maison ne va pas se nettoyer toute seule alors comme 80 % des femmes (36 % des hommes) tu pars pour une heure de tâches domestiques. En moyenne tu y consacres 3h34 par jour en y ajoutant le soin aux enfants (données INSEE 2010), 1h37 pour les hommes. "
+                    text: "En arrivant à la maison, ton conjoint t’appelle pour te dire qu’il part à un afterwork pour discuter avec Jean-Claude et ne pas rater la prochaine promotion. Toi aussi tu aurais bien aimé pouvoir avancer tes dossiers pour obtenir une promotion et changer de service afin de devenir manager et ne plus avoir à subir Jean-Michel. Mais bon, la maison ne va pas se nettoyer toute seule alors comme 80 % des femmes (36 % des hommes) tu pars pour une heure de tâches domestiques. En moyenne tu y consacres 3h34 par jour en y ajoutant le soin aux enfants (données INSEE 2010), 1h37 pour les hommes. "
                 }
             }
         ]
     },
 {
         id: 9,
-        temps: "APRES-MIDI",
-        question: " En arrivant à l’école, la maîtresse te rend un enfant fiévreux qui tousse. Elle te dit qu’il ne pourra revenir à l’école qu’avec un certificat médical attestant du fait qu’il n’est pas contagieux. Qui appelle et va chez le médecin ?",
+        temps: "APRÈS-MIDII",
+        question: "En arrivant à l’école, la maîtresse te rend un enfant fiévreux qui tousse. Elle te dit qu’il ne pourra revenir à l’école qu’avec un certificat médical attestant du fait qu’il n’est pas contagieux. Qui appelle et va chez le médecin ?",
         answers: [
             {
                 id: 1,
-                text: "toi",
+                text: "Toi",
                 score: null,
                 explanation: {
                     text: "C’est toi comme environ 70 % des femmes qui te charge de la santé des enfants. La charge médicale retombe bien souvent sur les mères. (enquête OpinionWay/Qare"	
@@ -198,7 +198,7 @@ const quiz =  {
             },
             {
                 id: 2,
-                text: "ton conjoint",
+                text: "Ton conjoint",
                 score: null,
                 explanation: {
                     text: "Bravo, tu as de la chance car en règle générale ce sont 70 % des femmes qui portent la charge médicale des enfants. Manque de pot, il t’appelle en plein consultation pour te demander la dernière date de vaccination du petit. Tu réponds excédée que c’est noté dans le carnet de santé que tu lui as donné en partant car il ne savait pas où il était rangé. "
@@ -208,23 +208,23 @@ const quiz =  {
     },
 {
         id: 10,
-        temps: "APRES-MIDI",
+        temps: "APRÈS-MIDII",
         question: "C’est la goutte de trop. En attendant qu’ils reviennent, tu envisages sérieusement de plier bagage et demander le divorce… ",
         answers: [
             {
                 id: 1,
-                text: "tu demandes le divorce",
+                text: "Tu demandes le divorce",
                 score: null,
                 explanation: {
-                    text: "Tu demandes le divorce : et c’est un pari risqué. car les femmes qui divorcent ont deux fois plus de risque de tomber dans la pauvreté que leurs ex-conjoints, et subissent une chute de 18% de leur niveau de vie antérieur à la séparation (contre 8% pour les hommes). La voiture était au nom de ton mec ; la maison est celle de ton conjoint qu’il avait hérité de son père qui lui avait fait une donation de son vivant. Toi tu avais payé les factures d’électricité, les couches et remplis le frigo (Le genre du Capital, Sibylle Gollac, Céline Bessière). Seulement tout ceci ne constitue pas un capital pour repartir d’un bon pied. De plus, 25 % des parents non gardiens ne versent pas de pension alimentaire en moyenne."	
+                    text: "Et c’est un pari risqué. car les femmes qui divorcent ont deux fois plus de risque de tomber dans la pauvreté que leurs ex-conjoints, et subissent une chute de 18% de leur niveau de vie antérieur à la séparation (contre 8% pour les hommes). La voiture était au nom de ton mec ; la maison est celle de ton conjoint qu’il avait hérité de son père qui lui avait fait une donation de son vivant. Toi tu avais payé les factures d’électricité, les couches et remplis le frigo (Le genre du Capital, Sibylle Gollac, Céline Bessière). Seulement tout ceci ne constitue pas un capital pour repartir d’un bon pied. De plus, 25 % des parents non gardiens ne versent pas de pension alimentaire en moyenne."	
     }
             },
             {
                 id: 2,
-                text: "tu restes",
+                text: "Tu restes",
                 score: null,
                 explanation: {
-                    text: "Tu restes : Et tu fais bien car les femmes qui divorcent ont deux fois plus de risques de tomber dans la pauvreté que leurs ex-conjoints, et subissent une chute de 18% de leur niveau de vie antérieur à la séparation (contre 8% pour les hommes). Tu te rappelles ta copine Carole qui est partie et qui a tout perdu. La voiture était au nom de son mec ; la maison était celle qu’il avait hérité de son père qui lui avait fait une donation de son vivant. Carole, elle, avait payé les factures d’électricité, les couches et remplit le frigo. Seulement tout ceci ne constitue pas un capital pour repartir d’un bon pied. De plus, 25 % des parents non gardiens ne versent pas de pension alimentaire en moyenne."
+                    text: "Et tu fais bien car les femmes qui divorcent ont deux fois plus de risques de tomber dans la pauvreté que leurs ex-conjoints, et subissent une chute de 18% de leur niveau de vie antérieur à la séparation (contre 8% pour les hommes). Tu te rappelles ta copine Carole qui est partie et qui a tout perdu. La voiture était au nom de son mec ; la maison était celle qu’il avait hérité de son père qui lui avait fait une donation de son vivant. Carole, elle, avait payé les factures d’électricité, les couches et remplit le frigo. Seulement tout ceci ne constitue pas un capital pour repartir d’un bon pied. De plus, 25 % des parents non gardiens ne versent pas de pension alimentaire en moyenne."
                 }
             }
         ]
@@ -290,7 +290,7 @@ const quiz =  {
             },
             {
                 id: 2,
-                text: "tu oublies ta pilule",
+                text: "Tu oublies ta pilule",
                 score: null,
                 explanation: {
                     text: "Heureusement en France, le droit à l’avortement a été inscrit dans la consitution et est ouvert et gratuit jusqu’à 14 semaines. En Europe 2 pays ont officiellement restreint l’accès à l’avortement. Et même lorsque l’avortement est autorisé, l’accès y est parfois empêché. En Italie, 67% des médecins font jouer leur clause de conscience, un dispositif qui existe dans 23 pays, et le gouvernement de Georgia Mélonie a autorisé les groupes anti avortement à intervenir dans les cliniques. "

@@ -1,11 +1,30 @@
-import Score from '../components/Score';
-import Logo from '../components/Logo';
+import { useNavigate, Link } from 'react-router-dom';
+import FLY from './../assets/images/Logo_FLY_center.png'
+import GIF from "../assets/images/beyonce.webp";
 
-function Resultpage({count}) {
+function Resultpage() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/quiz")
+
+  }
   return (
     <div>
-      <Logo />
-      <Score count={count} />
+      <div className='logoResult'>
+      <Link to ="/">
+        <img src={FLY} alt='Logo Femme Like You' className='FLY-result' />
+      </Link>
+      </div>
+
+      <div className='result-container'>
+        <div className='result-text'>
+          <img src={GIF} alt="Who run the world ? Girls" />
+        </div>      
+      <div className='container-restart'>
+        <button className='bouton' onClick={handleClick}>RECOMMENCER</button>
+      </div>
+      </div>
     </div>
   );
 }
