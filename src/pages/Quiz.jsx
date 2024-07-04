@@ -86,6 +86,7 @@ function Quiz() {
           <Button className='nextBouton' onclick={handleNext}>SUIVANT</Button>
         </div>
       </div>
+      </div>
 
   );
 }
