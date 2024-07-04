@@ -1,10 +1,10 @@
-import FLY from "../assets/images/Logo_FLY_center.png";
-import styles from "./Logo.module.css";
+import FLY from "../assets/images/Logo_FLY.png";
+import './Logo.css'
 
 function Logo() {
   return (
     <div>
-      <img src={FLY} alt="Logo Femme Like You" className={styles.FLY}/>
+      <img src={FLY} alt="Logo Femme Like You" className='FLY'/>
     </div>
   )
 }

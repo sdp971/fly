@@ -1,5 +1,5 @@
 function Button({ children,onclick }) {
-  return <button  type="submit"onClick={onclick}>{children}</button>;
+  return <button className='suivant' type="submit"onClick={onclick}>{children}</button>;
 }
 
 export default Button;

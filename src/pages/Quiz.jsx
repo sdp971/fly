@@ -52,7 +52,9 @@ function Quiz() {
       <div className='question-container' ref={questionContainerRef}>
         <Question2 question={questions[currentQuestion].question} />
 
-        <div className='answer-container'>
+        {displayComponent}
+      </div>
+      <div className='answer-container'>
           <Button
             onclick={() => handleClick(questions[currentQuestion].id, 'VRAI')}
           >
@@ -64,13 +66,11 @@ function Quiz() {
             FAUX
           </Button>
         </div>
-
-        {displayComponent}
         <div className='btn-next'>
-          <Button onclick={handleNext}>SUIVANT</Button>
+          <Button className='nextBouton' onclick={handleNext}>SUIVANT</Button>
         </div>
       </div>
-    </div>
+
   );
 }
 

@@ -1,0 +1,16 @@
+.FLY {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 470px) {
+    .FLY {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 470px) {
+    .FLY {
+        width: 25rem;
+    }
+}
