@@ -1,5 +1,5 @@
 .Quizz {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,4 +23,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.btn-next {
+  /* padding-top: 32px; */
+  height: fit-content;
 }
