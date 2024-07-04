@@ -1,5 +1,6 @@
-import FLY from "../assets/images/Logo_FLY_center.png";
-import './Homepage.css'
+import Logo from '../components/Logo';
+import Question from '../components/Question';
+import Question2 from '../components/Question';
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
       <div className='containerButton'>
         <button className='bouton'>COMMENCER</button>
       </div>
+      <Question2 />
     </div>
   );
 }
