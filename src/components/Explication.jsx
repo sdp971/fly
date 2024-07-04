@@ -24,7 +24,16 @@ function Explication({ texte, onclick }) {
         <p>{texte}</p>
       </div>
       <div className='btn-next'>
-        <Button onclick={onclick} showResultBtn={showResultBtn}>
+        <Button onclick={onclick} showResultBtn={showResultBtn}   style={{
+            width: "80%",
+            border: "2px solid black",
+            color: "#6A5AE0",
+            borderRadius: "20px",
+            height: "3rem",
+            fontSize: "20px",
+            gap: "20px",
+            backgroundColor: "#FFEEB6",
+          }}>
           {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
         </Button>
       </div>

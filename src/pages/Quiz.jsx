@@ -85,11 +85,10 @@ function Quiz() {
    
   }
 
-
   // quand une réponse est cliquée, les questions qui n'ont pas été cliquées doivent être disable
 
   return (
-    <div className='Quizz'>
+    <div className="Quizz">
       <Logo />
       {/* 
       <div className='question-container' ref={questionContainerRef}>
@@ -133,7 +132,15 @@ function Quiz() {
             <Button
               onclick={() => handleClick(answer.id, answer.text)}
               style={{
-                borderColor: selectedAnswer === answer.text ? 'green' : ' ',
+                backgroundColor:
+                  selectedAnswer === answer.text ? "lightgreen" : "#FFEEB6 ",
+                width: "80%",
+                border: "2px solid black",
+                color: "#6A5AE0",
+                borderRadius: "20px",
+                height: "3rem",
+                fontSize: "20px",
+                gap: "20px",
               }}
               disabled={disabled}
             >
