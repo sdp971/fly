@@ -13,12 +13,14 @@ function Explication({ texte, onclick }) {
 
   return (
     // <div className={`explaination-container ${showComponent ? 'fade-in':"" }`}>
-    <div className={`explication-container ${showComponent ? 'show' : ''}`}>
-      <img src={image} alt='' className='explication-image' />
-      <p>{texte}</p>
-      <div className='btn-next'>
-        <Button onclick={onclick}>SUIVANT</Button>
-      </div>
+      <div className={`main-explication-container ${showComponent ? 'show' : ''}`}>
+        <div className='explication-container'>
+          <img src={image} alt='' className='explication-image' />
+          <p>{texte}</p>
+        </div>
+        <div className='btn-next'>
+          <Button onclick={onclick}>SUIVANT</Button>
+        </div>
     </div>
   );
 }
