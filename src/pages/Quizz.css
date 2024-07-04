@@ -1,11 +1,11 @@
-.Quizz{
+.Quizz {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.question-container{
+.question-container {
   color: var(--violet);
   width: 70%;
   display: flex;
@@ -19,4 +19,8 @@
   background-color: var(yellow);
 }
 
-
+.main-answer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

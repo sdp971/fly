@@ -1,12 +1,11 @@
-import Explication from '../components/Explication';
-import Logo from '../components/Logo';
+import Explication from "../components/Explication";
+import Logo from "../components/Logo";
 // import Question from '../components/Question';
-import Question2 from '../components/Question2.jsx';
-import quiz from '../services/quiz.js';
-import Button from '../components/Button.jsx';
-import { useEffect, useRef, useState } from 'react';
-import './Quizz.css';
-
+import { useEffect, useRef, useState } from "react";
+import Button from "../components/Button.jsx";
+import Question2 from "../components/Question2.jsx";
+import quiz from "../services/quiz.js";
+import "./Quizz.css";
 
 function Quiz() {
   const questions = quiz.questions;
@@ -18,16 +17,16 @@ function Quiz() {
 
   const questionContainerRef = useRef(null);
 
-  console.log(questions[currentQuestion].question, 'question display');
+  console.log(questions[currentQuestion].question, "question display");
   console.log(questions[currentQuestion].answers[1].explanation.text);
 
-  console.log(showExplanation, 'quiz');
+  console.log(showExplanation, "quiz");
 
   function handleClick(answer_id, answer) {
-    console.log(answer_id, 'id');
+    console.log(answer_id, "id");
     if (!selectedAnswer) {
-   setDisabled(true);
-}
+      setDisabled(true);
+    }
     setSelectedAnswer(answer);
     // setSelectedButton(answer_id);
     setShowExplanation(true);
@@ -40,13 +39,11 @@ function Quiz() {
         onclick={handleNext}
       />
     );
-    
   }
 
   useEffect(() => {
-    console.log(disabled,"disabled");
-
-   },[disabled])
+    console.log(disabled, "disabled");
+  }, [disabled]);
 
   function handleNext() {
     setDisplayComponent(null);
@@ -58,39 +55,46 @@ function Quiz() {
     }
   }
 
- 
   // quand une réponse est cliquée, les questions qui n'ont pas été cliquées doivent être disable
 
   return (
-    <div className='Quizz'>
+    <div className="Quizz">
       <Logo />
 
-    <div className='main-question-container'>
-      <div className='context-container' ref={questionContainerRef}>
-        <p className='text-context'>Contexte de la question</p>
-      </div>
-      <div className='question-container'>
-      <Question2 question={questions[currentQuestion].question} />
-      </div>
-    </div>
-
-    <div className='main-answer-container'>
-      {questions[currentQuestion].answers.map((answer, index) => (
-      <div key={index}>
-        <Button
-          onclick={() => handleClick(answer.id, answer.text)}
-          style={{
-          borderColor: selectedAnswer === answer.text ? 'green' : ' ',
-          }}
-          disabled={disabled}
-        >
-          {answer.text}
-        </Button>
+      <div className="main-question-container">
+        <div className="context-container" ref={questionContainerRef}>
+          <p className="text-context">Contexte de la question</p>
         </div>
-          ))}
-
-          {displayComponent}
+        <div className="question-container">
+          <Question2 question={questions[currentQuestion].question} />
         </div>
+      </div>
+
+      <div className="main-answer-container">
+        {questions[currentQuestion].answers.map((answer, index) => (
+          <div key={index}>
+            <Button
+              onclick={() => handleClick(answer.id, answer.text)}
+              style={{
+                backgroundColor:
+                  selectedAnswer === answer.text ? "lightgreen" : "#FFEEB6 ",
+                width: "70%",
+                border: "2px solid black",
+                color: "#6A5AE0",
+                borderRadius: "20px",
+                height: "3rem",
+                fontSize: "20px",
+                gap: "20px",
+              }}
+              disabled={disabled}
+            >
+              {answer.text}
+            </Button>
+          </div>
+        ))}
+
+        {displayComponent}
+      </div>
     </div>
   );
 }
