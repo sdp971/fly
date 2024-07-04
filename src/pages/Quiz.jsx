@@ -133,7 +133,7 @@ function Quiz() {
               onclick={() => handleClick(answer.id, answer.text)}
               style={{
                 backgroundColor:
-                  selectedAnswer === answer.text ? "lightgreen" : "#FFEEB6 ",
+                  selectedAnswer === answer.text ? "#FCBB65" : "#FFEEB6",
                 width: "80%",
                 border: "2px solid black",
                 color: "#6A5AE0",
@@ -151,13 +151,22 @@ function Quiz() {
 
         {displayComponent}
       </div>
+      <div className='btn-next'>
       <Button
         onclick={handleNext}
         showResultBtn={showResultBtn}
-        style={{ visibility: visibility ? 'visible' : 'hidden' }}
+        style={{ visibility: visibility ? 'visible' : 'hidden',             width: "80%",
+          border: "2px solid black",
+          color: "#6A5AE0",
+          borderRadius: "20px",
+          height: "3rem",
+          fontSize: "20px",
+          gap: "20px",
+          backgroundColor: "#FFEEB6", }}
       >
         {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
       </Button>
+      </div>
     </div>
   );
 }
