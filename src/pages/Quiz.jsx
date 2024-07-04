@@ -78,7 +78,7 @@ function Quiz() {
               style={{
                 backgroundColor:
                   selectedAnswer === answer.text ? "lightgreen" : "#FFEEB6 ",
-                width: "70%",
+                width: "80%",
                 border: "2px solid black",
                 color: "#6A5AE0",
                 borderRadius: "20px",

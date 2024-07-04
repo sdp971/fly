@@ -1,21 +1,36 @@
-.main-explication-container{
-background-color: white;
-border: 1px solid black;
-height: fit-content;
-width: 60%;
-margin: auto;
+.main-explication-container {
+  background-color: white;
+  border: 1px solid black;
+  height: fit-content;
+  width: 80%;
+  margin: auto;
   margin-top: auto;
   margin-bottom: auto;
   margin-top: 35px;
   margin-bottom: 35px;
-border-radius: 8px;
-padding: 16px 0 16px 0px;
+  border-radius: 8px;
+  padding: 16px 0 16px 0px;
 
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 2s, height 2s;
 
-opacity: 0;
-height: 0;
-overflow: hidden;
-transition: opacity 2s, height 2s;
+  /* border: 2px solid black;
+border-radius: 30px 30px 30px 30px;
+background-color: white;
+width: 70%;
+margin: auto;
+margin-bottom: 2rem;
+margin-top: 3rem;
+height: fit-content;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+padding: 0px 0px 16px 0px;
+gap: 20px;
+min-height: 200px; */
 }
 
 .main-explication-container.show {
@@ -23,11 +38,11 @@ transition: opacity 2s, height 2s;
   height: auto;
 }
 
-.explication-image{
+.explication-image {
   width: 25%;
 }
 
-.btn-next{
+.btn-next {
   padding-top: 32px;
   height: fit-content;
 }
