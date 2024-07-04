@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("./assets/fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("./assets/fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url("./assets/fonts/Nunito-SemiBold.ttf") format("truetype");
+}
+
+:root {
+  --font-text : "Nunito-Regular", sans-serif;
+  --font-bold : "Nunito-Bold", sans-serif;
+  --font-semibold : "Nunito-SemiBold", sans-serif;
+  --jaune : #FFEEB6;
+  --violet : #6A5AE0;
+  --rose : #FFD6DD;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,12 +30,13 @@
 
 #root {
   text-align: center;
- background-color: blueviolet;
+  font-family: var(--font-text);
 }
 
 .question-container {
   border: 2px solid black;
-  background-color: azure;
+  border-radius: 30px 30px 30px 30px;
+  background-color: white;
   width: 70%;
   margin: auto;
   height: fit-content;
@@ -25,5 +50,20 @@
 }
 
 .question-container > h1{
+  padding: 16px;
+  background-color: var(--jaune);
+  border-radius: 30px 30px 0px 0px;
+  font-family: var(--font-semibold);
+}
+
+
+.suivant {
+  font-family: var(--font-bold);
+  color: var(--violet);
+  font-size: 18px;
+  background-color: var(--jaune);
+  border: 2px solid black;
+  border-radius: 40px 40px 40px 40px;
+  width: 100%;
   padding: 16px;
 }

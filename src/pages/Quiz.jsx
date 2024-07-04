@@ -83,10 +83,10 @@ function Quiz() {
 
         {displayComponent}
         <div className='btn-next'>
-          <Button onclick={handleNext}>SUIVANT</Button>
+          <Button className='nextBouton' onclick={handleNext}>SUIVANT</Button>
         </div>
       </div>
-    </div>
+
   );
 }
 

@@ -1,5 +1,5 @@
 import './App.css';
-// import Homepage from './pages/Homepage';
+import Homepage from './pages/Homepage';
 import Quiz from './pages/Quiz';
 
 // import Resultpage from './pages/Resultpage';
@@ -7,7 +7,7 @@ import Quiz from './pages/Quiz';
 function App() {
   return (
     <>
-      {/* <Homepage /> */}
+      <Homepage />
       <Quiz />
      
       {/* <Resultpage /> */}
