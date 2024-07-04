@@ -17,7 +17,7 @@ function Explication({ texte }) {
       className={`main-explication-container ${showComponent ? 'show' : ''}`}
     >
       <div className='explication-container'>
-        <img src={image} alt='' className='explication-image' />
+        {/* <img src={image} alt='' className='explication-image' /> */}
         <p>{texte}</p>
       </div>
     </div>
