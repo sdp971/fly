@@ -1,7 +1,5 @@
-import Logo from '../components/Logo';
-import Question from '../components/Question';
-import FLY from '../assets/images/Logo_FLY_center.png';
-import Question2 from '../components/Question';
+import FLY from './../assets/images/Logo_FLY_center.png'
+import './Homepage.css';
 
 function Homepage() {
   return (
