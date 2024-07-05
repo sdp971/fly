@@ -7,6 +7,7 @@ function Resultpage() {
 
   function handleClick() {
     navigate("/quiz")
+     window.location.reload();
 
   }
   return (
@@ -21,8 +22,10 @@ function Resultpage() {
         <div className='result-text'>
           <img src={GIF} alt="Who run the world ? Girls" />
         </div>      
-      <div className='container-restart'>
-        <button className='bouton' onClick={handleClick}>RECOMMENCER</button>
+        <div className='container-restart'>
+           <Link to ="/quiz" refresh="true">
+          <button className='bouton' onClick={handleClick}>RECOMMENCER</button>
+           </Link>
       </div>
       </div>
     </div>

@@ -95,7 +95,7 @@ function Quiz() {
       {showResultBtn ? null : (
         <div className='main-question-container'>
           <div className='context-container' ref={questionContainerRef}>
-            <p className='text-context'>Contexte de la question</p>
+            <p className='text-context'>{questions[currentQuestion].temps}</p>
           </div>
           <div className='question-container'>
             <Question2 question={questions[currentQuestion].question} />
@@ -143,7 +143,7 @@ function Quiz() {
             borderRadius: '20px',
             height: '3rem',
             fontSize: '20px',
-            margin:'2rem',
+            margin: '2rem',
             gap: '20px',
             backgroundColor: '#FFEEB6',
           }}
