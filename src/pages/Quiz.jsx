@@ -90,33 +90,6 @@ function Quiz() {
   return (
     <div className="Quizz">
       <Logo />
-      {/* 
-      <div className='question-container' ref={questionContainerRef}>
-        <Question2 question={questions[currentQuestion].question} />
-
-        {questions[currentQuestion].answers.map((answer, index) => (
-          <div className='answer-container' key={index}>
-            <Button
-              onclick={() => handleClick(answer.id, answer.text)}
-              style={{
-                borderColor: selectedAnswer === answer.text ? 'green' : ' ',
-              }}
-              disabled={disabled}
-            >
-              {answer.text}
-            </Button>
-          </div>
-        ))}
-
-        {displayComponent}
-        <div className='btn-next'>
-          <Button className='nextBouton' onclick={handleNext}>
-            {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
-          </Button>
-        </div>
-      </div>
-      <p>score :{count}</p>
-       */}
       <div className='main-question-container'>
         <div className='context-container' ref={questionContainerRef}>
           <p className='text-context'>Contexte de la question</p>
@@ -155,7 +128,8 @@ function Quiz() {
       <Button
         onclick={handleNext}
         showResultBtn={showResultBtn}
-        style={{ visibility: visibility ? 'visible' : 'hidden',             width: "80%",
+        style={{ visibility: visibility ? 'visible' : 'hidden',
+          width: "80%",
           border: "2px solid black",
           color: "#6A5AE0",
           borderRadius: "20px",

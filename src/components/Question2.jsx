@@ -1,5 +1,5 @@
-function Question2({ question }) {
-  return <h1 style={{ fontSize: "25px" }}>{question}</h1>;
+function Question2({ question, temps }) {
+  return <h1 style={{ fontSize: "22px" }}>{question}</h1>;
 }
 
 export default Question2;

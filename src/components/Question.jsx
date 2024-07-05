@@ -37,10 +37,10 @@ function Question() {
     <div>
       {questions.map((question,index) => (
         <div key={index}>
-          <h1>{question.question}</h1>
-
+          {/* <h1>{question.question}</h1> */}
+{/* 
           <Button onclick={() => handleClick(question.id, 'VRAI')}>VRAI</Button>
-          <Button onclick={() => handleClick(question.id, 'FAUX')}>FAUX</Button>
+          <Button onclick={() => handleClick(question.id, 'FAUX')}>FAUX</Button> */}
 
           {displayComponent}
         </div>
