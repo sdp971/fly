@@ -1,13 +1,16 @@
 import { useNavigate, Link } from 'react-router-dom';
 import FLY from './../assets/images/Logo_FLY_center.png'
 import GIF from "../assets/images/beyonce.webp";
+import { useScore } from '../context/UserProvider';
+
 
 function Resultpage() {
   const navigate = useNavigate();
+   const { setShowResultBtn } = useScore();
 
   function handleClick() {
     navigate("/quiz")
-     window.location.reload();
+    setShowResultBtn(false);
 
   }
   return (
