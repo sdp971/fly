@@ -11,6 +11,7 @@ import { useScore } from '../context/UserProvider.jsx';
 
 function Quiz() {
   const questions = quiz.questions;
+
   const [showExplanation, setShowExplanation] = useState(false);
   const [displayComponent, setDisplayComponent] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -24,7 +25,7 @@ function Quiz() {
   const navigate = useNavigate();
 
   const questionContainerRef = useRef(null);
-
+  console.log(questions[currentQuestion].temps);
   // console.log(questions[currentQuestion].question, 'question display');
   // console.log(questions[currentQuestion].answers[1].explanation.text);
 
