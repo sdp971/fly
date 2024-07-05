@@ -137,6 +137,7 @@ function Quiz() {
           height: "3rem",
           fontSize: "20px",
           gap: "20px",
+          margin: "30px",
           backgroundColor: "#FFEEB6", }}
       >
         {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
