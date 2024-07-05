@@ -7,6 +7,7 @@ function Resultpage() {
 
   function handleClick() {
     navigate("/quiz")
+     window.location.reload();
 
   }
   return (
