@@ -88,58 +88,66 @@ function Quiz() {
   // quand une réponse est cliquée, les questions qui n'ont pas été cliquées doivent être disable
 
   return (
-    <div className="Quizz">
+    <div className='Quizz'>
       <Logo />
-      <div className='main-question-container'>
-        <div className='context-container' ref={questionContainerRef}>
-          <p className='text-context'>Contexte de la question</p>
-        </div>
-        <div className='question-container'>
-          <Question2 question={questions[currentQuestion].question} />
-        </div>
-      </div>
 
-      <div className='main-answer-container'>
-        {questions[currentQuestion].answers.map((answer, index) => (
-          <div key={index}>
-            <Button
-              onclick={() => handleClick(answer.id, answer.text)}
-              style={{
-                backgroundColor:
-                  selectedAnswer === answer.text ? "#FCBB65" : "#FFEEB6",
-                width: "80%",
-                border: "2px solid black",
-                color: "#6A5AE0",
-                borderRadius: "20px",
-                height: "3rem",
-                fontSize: "20px",
-                gap: "20px",
-              }}
-              disabled={disabled}
-            >
-              {answer.text}
-            </Button>
+      {showResultBtn ? null : (
+        <div className='main-question-container'>
+          <div className='context-container' ref={questionContainerRef}>
+            <p className='text-context'>Contexte de la question</p>
           </div>
-        ))}
+          <div className='question-container'>
+            <Question2 question={questions[currentQuestion].question} />
+          </div>
+        </div>
+      )}
 
-        {displayComponent}
-      </div>
+      {showResultBtn ? null : (
+        <div className='main-answer-container'>
+          {questions[currentQuestion].answers.map((answer, index) => (
+            <div key={index}>
+              <Button
+                onclick={() => handleClick(answer.id, answer.text)}
+                style={{
+                  backgroundColor:
+                    selectedAnswer === answer.text ? '#FCBB65' : '#FFEEB6',
+                  width: '80%',
+                  border: '2px solid black',
+                  color: '#6A5AE0',
+                  borderRadius: '20px',
+                  height: '3rem',
+                  fontSize: '20px',
+                  gap: '20px',
+                }}
+                disabled={disabled}
+              >
+                {answer.text}
+              </Button>
+            </div>
+          ))}
+
+          {displayComponent}
+        </div>
+      )}
+
       <div className='btn-next'>
-      <Button
-        onclick={handleNext}
-        showResultBtn={showResultBtn}
-        style={{ visibility: visibility ? 'visible' : 'hidden',
-          width: "80%",
-          border: "2px solid black",
-          color: "#6A5AE0",
-          borderRadius: "20px",
-          height: "3rem",
-          fontSize: "20px",
-          gap: "20px",
-          backgroundColor: "#FFEEB6", }}
-      >
-        {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
-      </Button>
+        <Button
+          onclick={handleNext}
+          showResultBtn={showResultBtn}
+          style={{
+            visibility: visibility ? 'visible' : 'hidden',
+            width: '80%',
+            border: '2px solid black',
+            color: '#6A5AE0',
+            borderRadius: '20px',
+            height: '3rem',
+            fontSize: '20px',
+            gap: '20px',
+            backgroundColor: '#FFEEB6',
+          }}
+        >
+          {showResultBtn ? 'VOIR RESULTATS' : 'SUIVANT'}
+        </Button>
       </div>
     </div>
   );
