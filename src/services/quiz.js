@@ -49,6 +49,7 @@ const quiz = {
       id: 1,
       question: 'Quelle est la plus grande planète du système solaire ?',
       backgroundColor: 'lightblue',
+      time:"morning",
       answers: [
         {
           id: 1,
