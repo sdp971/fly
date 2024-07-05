@@ -12,7 +12,7 @@ function Resultpage() {
   return (
     <div>
       <div className='logoResult'>
-      <Link to ="/">
+      <Link to ="/" refresh="true">
         <img src={FLY} alt='Logo Femme Like You' className='FLY-result' />
       </Link>
       </div>

@@ -143,6 +143,7 @@ function Quiz() {
             borderRadius: '20px',
             height: '3rem',
             fontSize: '20px',
+            margin:'2rem',
             gap: '20px',
             backgroundColor: '#FFEEB6',
           }}
